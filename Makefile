@@ -37,7 +37,7 @@ RELEASE_FLAGS := -O2
 SRC_DIR := src
 BUILD_DIR := build
 BIN_DIR := bin
-TARGET := $(BIN_DIR)/app
+TARGET := $(BIN_DIR)/run
 
 # Source and Object Files
 SOURCES := $(wildcard $(SRC_DIR)/*.cpp)
