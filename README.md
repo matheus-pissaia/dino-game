@@ -1,6 +1,9 @@
 Jogo de Helicóptero e Dinossauros
 Este é um jogo em C que utiliza as bibliotecas ncurses e pthread para criar uma experiência interativa onde o jogador controla um helicóptero que combate dinossauros em um cenário com elementos dinâmicos e gerenciamento de recursos.
 
+![WhatsApp Image 2024-11-24 at 22 35 57](https://github.com/user-attachments/assets/d4c5bdd0-e60c-4be9-bd29-548e1afe687e)
+
+
 Características do Jogo:
 
 Helicóptero:
