@@ -1,8 +1,11 @@
 # Compiler and Flags
 CXX := g++
-CXXFLAGS := -Wall -Wextra -pedantic -std=c++17 -Iinclude -lncurses
+CXXFLAGS := -Wall -Wextra -pedantic -std=c++17 -Iinclude
 DEBUG_FLAGS := -g
 RELEASE_FLAGS := -O2
+
+# Linker Flags
+LDFLAGS := -lncurses
 
 # Project Structure
 SRC_DIR := src
@@ -31,7 +34,7 @@ release: $(TARGET)
 # Linking
 $(TARGET): $(OBJECTS)
 	@mkdir -p $(BIN_DIR)
-	$(CXX) $(CXXFLAGS) $^ -o $@
+	$(CXX) $(CXXFLAGS) $^ -o $@ $(LDFLAGS)
 	@echo "Build complete: $(TARGET)"
 
 # Compilation
