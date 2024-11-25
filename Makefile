@@ -1,32 +1,3 @@
-# CC = g++
-# CFLAGS = -std=c++11 -Wall -lncurses
-
-# SRCDIR = src
-# BUILDDIR = build
-# BINDIR = bin
-
-# SRCS = $(wildcard $(SRCDIR)/*.cpp)
-# OBJS = $(patsubst $(SRCDIR)/%.cpp, $(OBJDIR)/%.o, $(SRCS))
-
-# all: prepare $(BINDIR)
-
-# $(BINDIR): $(OBJS)
-# 	$(CC) $(CFLAGS) -o $(BINDIR) $(OBJS)
-
-# %.o: %.cpp
-# 	$(CC) $(CFLAGS) -c $< -o $@
-
-# # Compilação de cada arquivo-fonte
-# $(OBJDIR)/%.o: $(SRCDIR)/%.c
-# 	$(CC) $(CFLAGS) -c $< -o $@
-
-# # Preparação de diretórios necessários
-# prepare:
-# 	mkdir -p $(OBJDIR) $(BINDIR)
-
-# clean:
-# 	rm -f $(OBJS) $(BINDIR)
-
 # Compiler and Flags
 CXX := g++
 CXXFLAGS := -Wall -Wextra -pedantic -std=c++17 -Iinclude -lncurses
